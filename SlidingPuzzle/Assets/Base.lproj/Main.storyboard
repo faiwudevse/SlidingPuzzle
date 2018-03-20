@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SlidingPuzzle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STh-Zb-Pnh">
+                                <rect key="frame" x="171" y="220" width="33" height="30"/>
+                                <state key="normal" title="Easy"/>
+                                <connections>
+                                    <action selector="startGameButtonTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KKu-5s-1Vg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DHl-uY-zWB">
+                                <rect key="frame" x="170" y="380" width="34" height="30"/>
+                                <state key="normal" title="Hard"/>
+                                <connections>
+                                    <action selector="startGameButtonTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oje-Vo-gKs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LY2-qx-su7">
+                                <rect key="frame" x="162" y="300" width="50" height="30"/>
+                                <state key="normal" title="Normal"/>
+                                <connections>
+                                    <action selector="startGameButtonTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bqw-IR-PCj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="STh-Zb-Pnh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="339-eg-D2K"/>
+                            <constraint firstItem="DHl-uY-zWB" firstAttribute="top" secondItem="LY2-qx-su7" secondAttribute="bottom" constant="50" id="Fwd-ni-Rao"/>
+                            <constraint firstItem="STh-Zb-Pnh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Qd5-am-JnH"/>
+                            <constraint firstItem="LY2-qx-su7" firstAttribute="top" secondItem="STh-Zb-Pnh" secondAttribute="bottom" constant="50" id="Zi7-AN-V9q"/>
+                            <constraint firstItem="LY2-qx-su7" firstAttribute="centerX" secondItem="DHl-uY-zWB" secondAttribute="centerX" id="cAf-QB-ZXc"/>
+                            <constraint firstItem="LY2-qx-su7" firstAttribute="centerX" secondItem="STh-Zb-Pnh" secondAttribute="centerX" id="wP3-Su-SPo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
